@@ -10,7 +10,6 @@ const Navbar = () => {
     { name: 'project', icon: <FolderDot size={16} />, path: '/project' },
     { name: 'contact', icon: <Phone size={16} />, path: '/contact' }
   ];
-
   return (
     <>
       {/* Top navbar - only on md and larger */}
@@ -22,18 +21,17 @@ const Navbar = () => {
 
           <div className="flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-2 backdrop-blur-md shadow-md">
             <ul className="flex items-center gap-3 text-white text-sm">
-              {navItems.map(item => (
-                <li
-                  key={item.name}
-                  className={`flex items-center  gap-1 px-2 py-1 rounded-full cursor-pointer transition ${selected === item.name ? "bg-white/10" : ""
-                    }`}
-                  onClick={() => setSelected(item.name)}
-                >
-                  <Link to={item.path} className={`flex items-center ${item.name === '' ? '' : 'gap-1'}`}>
+              {navItems.map((item, index) => (
+                <Link key={index} to={item.path} className={`flex items-center ${item.name === '' ? '' : 'gap-1'}`}>
+                  <li
+                    className={`flex items-center  gap-1 px-2 py-1 rounded-full cursor-pointer transition ${selected === item.name ? "bg-white/10" : ""
+                      }`}
+                    onClick={() => setSelected(item.name)}
+                  >
                     {item.icon}
                     <span className="capitalize">{item.name}</span>
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               ))}
 
             </ul>
@@ -51,17 +49,16 @@ const Navbar = () => {
       <div className=" fixed top-4 left-1/2 transform -translate-x-1/2 z-50 px-4 block md:hidden ">
         <nav className="bg-white/5 border border-white/10 rounded-full px-4 py-2 backdrop-blur-md shadow-md">
           <ul className="flex items-center gap-3 text-white text-sm">
-            {navItems.map(item => (
-              <li
-                key={item.name}
-                className={`flex items-center gap-1 px-2 py-1 rounded-full cursor-pointer transition ${selected === item.name ? "bg-white/10" : ""
-                  }`}
-                onClick={() => setSelected(item.name)}
-              >
-                <Link to={item.path} className="flex items-center gap-1">
+            {navItems.map((item, index) => (
+              <Link key={index} to={item.path} className="flex items-center gap-1">
+                <li
+                  className={`flex items-center gap-1 px-2 py-1 rounded-full cursor-pointer transition ${selected === item.name ? "bg-white/10" : ""
+                    }`}
+                  onClick={() => setSelected(item.name)}
+                >
                   {item.icon}
-                </Link>
-              </li>
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>

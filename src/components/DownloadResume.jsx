@@ -3,7 +3,7 @@ import React from "react";
 const DownloadResume = () => {
   return (
     <a href="/vansh_resume.pdf" download >
-      <button className=" uppercase ">Download Resume</button>
+      <button className=" uppercase cursor-pointer">Download Resume</button>
     </a>
   );
 };

@@ -22,7 +22,7 @@ import npm from '../assets/icons/npm.svg'
 
 const Skills = () => {
   return (
-    <div className='my-5 flex justify-center items-center flex-col'>
+    <div className='my-5 flex justify-center items-center flex-col md:max-w-xl'>
       <div className='flex flex-wrap mt-5 gap-2 justify-center'>
         <img src={C} alt="C Programming" />
         <img src={CPP} alt="C++" />

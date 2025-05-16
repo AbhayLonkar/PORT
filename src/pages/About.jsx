@@ -77,13 +77,13 @@ const About = () => {
 
         {/* Social Links */}
         <div className="flex flex-wrap gap-3 mb-10 ">
-          <button className="bg-white/10 px-4 py-2 rounded-full flex items-center space-x-2 text-sm hover:cursor-pointer">
+          <button className="bg-white/10 px-4 py-2 rounded-full flex items-center space-x-2 text-sm hover:cursor-pointer" onClick={() => window.open("https://github.com/abhaylonkar", "_blank")}>
             <span>🐱</span><span>GitHub</span>
           </button>
-          <button className="bg-white/10 px-4 py-2 rounded-full flex items-center space-x-2 text-sm hover:cursor-pointer">
+          <button className="bg-white/10 px-4 py-2 rounded-full flex items-center space-x-2 text-sm hover:cursor-pointer" onClick={() => window.open("https://linkedin.com/in/abhaylonkar", "_blank")}>
             <span>🔗</span><span>LinkedIn</span>
           </button>
-          <button className="bg-white/10 px-4 py-2 rounded-full flex items-center space-x-2 text-sm hover:cursor-pointer">
+          <button className="bg-white/10 px-4 py-2 rounded-full flex items-center space-x-2 text-sm hover:cursor-pointer" onClick={() => window.open("mailto:abhaylonkar9@gmail.com", "_blank")}>
             <span>✉️</span><span>Email</span>
           </button>
         </div>

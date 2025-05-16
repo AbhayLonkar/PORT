@@ -14,7 +14,8 @@ const Contact = () => {
     {
       icon: <Mail size={42} />,
       title: "Email me @",
-      description: "abhaylonkar9@gmail.com"
+      description: "abhaylonkar9@gmail.com",
+      openmail: () => window.open("mailto:abhaylonkar9@gmail.com", "_blank")
     },
     {
       icon: <Phone size={42} />,

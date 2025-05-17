@@ -1,5 +1,8 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard'
+import aiEnhanceImage from '../assets/projects/aienhance.png';
+import chessGameImage from '../assets/projects/chess-game.png';
+import newsAppImage from '../assets/projects/news-app.png';
 
 
 
@@ -8,7 +11,7 @@ const Project = () => {
     {
       title: "AiEnhance",
       description: "An Ai powered image enhancer! Upload your image and watch it transform into a higher-resolution version in one click.",
-      image: "/src/assets/projects/aienhance.png",
+      image: aiEnhanceImage,
       liveLink: "https://aienhance.vercel.app/",
       githubLink: "https://github.com/AbhayLonkar/AiEnhance",
       techStack: ["React", "Tailwind CSS", "Picsart API", "Vercel"],
@@ -16,7 +19,7 @@ const Project = () => {
     {
       title: "Chess Web App",
       description: "Developed an interactive chess game using JavaScript and the chess.js library. Utilized external libraries to enhance the gaming experience.",
-      image: "/src/assets/projects/chess-game.png",
+      image: chessGameImage,
       liveLink: "https://abhaylonkar.github.io/chess/",
       githubLink: "https://github.com/AbhayLonkar/chess.git",
       techStack: ["HTML", "CSS", "JS", "Chess.js", "Chessboard.js"],
@@ -25,7 +28,7 @@ const Project = () => {
     {
       title: "News Android App",
       description: "Created a real-time news app showcasing Nagpur's latest updates. Eliminiated reptitive content by sorting news based on dates.",
-      image: "/src/assets/projects/news-app.png",
+      image: newsAppImage,
       liveLink: "https://github.com/AbhayLonkar/news-app",
       githubLink: "https://github.com/AbhayLonkar/news-app",
       techStack: ["Android Studio", "Java", "Restfull APIs", "SQLite"],

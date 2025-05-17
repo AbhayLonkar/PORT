@@ -8,7 +8,7 @@ const Contact = () => {
   const contactCards = [
     {
       icon: <MapPin size={42} />,
-      title: "fint me @",
+      title: "find me @",
       description: "Nagpur, Maharashtra, India"
     },
     {

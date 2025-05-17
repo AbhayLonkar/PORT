@@ -26,11 +26,11 @@ const Home = () => {
       <div className="w-11/12 max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row items-center justify-center min-h-screen px-6 md:px-12 gap-10 md:gap-20">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Hello<br /> I'm Abhay Lonkar
+            Hello<br /> I'm <span className='text-blue-400'>Abhay Lonkar</span>
           </h1>
 
           <p className="text-base md:text-xl text-white/60 max-w-2xl mb-8">
-            Aspiring Android developer with internship experience, proficient in Java, Kotlin, and React.js. Strong web development foundation and passion for building responsive, user-friendly apps
+            Aspiring Android developer with internship experience, proficient in Java, Kotlin, and React Native, with a strong foundation in web development and a passion for building responsive, user-friendly apps.
           </p>
           <div className="rounded-lg inline-flex items-center gap-2 border border-white/30 hover:border-blue-400 hover:cursor-pointer transition px-6 py-3 text-white font-bold uppercase tracking-wider" >
             <DownloadResume />

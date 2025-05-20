@@ -45,7 +45,7 @@ const Home = () => {
       <div className='px-4 py-10'>
         <h1 className='text-center text-3xl md:text-4xl font-bold text-cyan-400 uppercase'>My coding Statistics</h1>
         <div className='flex justify-center items-center mt-6'>
-          <a href=""
+          <a href="https://github.com/abhaylonkar"
             className='uppercase w-8/12 md:w-auto text-center inline-flex items-center justify-center gap-2 border  border-white/30 hover:border-blue-400 transition px-6 py-3 text-white font-bold tracking-wider'
           >
             Github Profile

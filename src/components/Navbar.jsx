@@ -6,7 +6,7 @@ const Navbar = () => {
   const [_, setSelected] = useState("");
   const location = useLocation();
   const navItems = [
-    { name: '', icon: <Home size={16} />, path: '/' },
+    { name: 'home', icon: <Home size={16} />, path: '/' },
     { name: 'about', icon: <User size={16} />, path: '/about' },
     { name: 'project', icon: <FolderDot size={16} />, path: '/project' },
     { name: 'contact', icon: <Phone size={16} />, path: '/contact' }

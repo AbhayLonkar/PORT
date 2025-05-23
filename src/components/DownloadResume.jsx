@@ -2,7 +2,7 @@ import React from "react";
 
 const DownloadResume = () => {
   return (
-    <a href="https://drive.google.com/file/d/1YrjzI7eO-QCBJmOs7zlb71dSNnsOyX2T/view?usp=sharing" download >
+    <a href="https://drive.google.com/file/d/19neAKTyEBpMsrm8MhmsWd-zZD3Qiy8am/view?usp=sharing" download >
       <button className="uppercase cursor-pointer">Download Resume</button>
     </a>
   );
